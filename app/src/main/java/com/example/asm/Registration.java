@@ -23,8 +23,7 @@ public class Registration extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Registration.this, Login.class);
-                startActivity(intent);
+                Registration.super.onBackPressed();
             }
         });
     }
