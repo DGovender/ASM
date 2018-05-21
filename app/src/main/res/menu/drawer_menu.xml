@@ -3,25 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_match_centre"
-            android:icon="@drawable/ic_menu_match_centre"
-            android:title="Match Centre"
-            />
-        <item android:id="@+id/nav_players"
-            android:icon="@drawable/ic_menu_players"
-            android:title="Players"
-            />
-        <item android:id="@+id/nav_teams"
-            android:icon="@drawable/ic_menu_teams"
-            android:title="Teams"
-            />
-        <item android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_settings"
-            android:title="Settings"
-            />
-        <item android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_menu_log_out"
-            android:title="LogOut"
-            />
+        <item android:title="Menu">
+            <menu>
+                <item android:id="@+id/nav_match_centre"
+                    android:icon="@drawable/ic_menu_match_centre"
+                    android:title="Match Centre"
+                    />
+                <item android:id="@+id/nav_players"
+                    android:icon="@drawable/ic_menu_players"
+                    android:title="Players"
+                    />
+                <item android:id="@+id/nav_teams"
+                    android:icon="@drawable/ic_menu_teams"
+                    android:title="Teams"
+                    />
+
+            </menu>
+        </item>
+
+        <item android:title="Adjust Data ">
+            <menu>
+                <item android:id="@+id/nav_AddMatch"
+                    android:icon="@drawable/ic_dialog_add"
+                    android:title="Add Match"
+                    />
+                <item android:id="@+id/nav_AddPlayers"
+                    android:icon="@drawable/ic_dialog_add"
+                    android:title="Add Players"
+                    />
+                <item android:id="@+id/nav_AddTeams"
+                    android:icon="@drawable/ic_dialog_add"
+                    android:title="Add Teams"
+                    />
+            </menu>
+        </item>
+
+        <item android:title="Preferences">
+            <menu>
+                <item android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_menu_settings"
+                    android:title="Settings"
+                    />
+                <item android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_menu_log_out"
+                    android:title="Log Out"
+                    />
+            </menu>
+        </item>
     </group>
 </menu>

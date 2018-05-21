@@ -8,7 +8,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -55,6 +54,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_settings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Settings()).commit();
+                break;
+            case R.id.nav_AddMatch:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AddMatch()).commit();
+                break;
+            case R.id.nav_AddPlayers:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AddPlayers()).commit();
+                break;
+            case R.id.nav_AddTeams:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new AddTeams()).commit();
                 break;
             case R.id.nav_logout:
                 //Log Out
