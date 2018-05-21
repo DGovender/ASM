@@ -3,6 +3,7 @@
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,6 +17,17 @@ import android.widget.TextView;
         setTheme(R.style.AppThemeForCredentials);
 
         setContentView(R.layout.activity_login);
+
+        //Move Intent from Login to Registration
+        CardView login = findViewById(R.id.cardViewLogin);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //Move Intent from Login to Registration
         TextView register = findViewById(R.id.txtViewRegister);

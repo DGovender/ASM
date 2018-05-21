@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_match_centre"
+            android:icon="@drawable/ic_menu_match_centre"
+            android:title="Match Centre"
+            />
+        <item android:id="@+id/nav_players"
+            android:icon="@drawable/ic_menu_players"
+            android:title="Players"
+            />
+        <item android:id="@+id/nav_teams"
+            android:icon="@drawable/ic_menu_teams"
+            android:title="Teams"
+            />
+        <item android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="Settings"
+            />
+    </group>
+</menu>
