@@ -1,5 +1,6 @@
 package com.example.asm;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new AddTeams()).commit();
                 break;
             case R.id.nav_logout:
-                //Log Out
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
                 break;
         }
 
